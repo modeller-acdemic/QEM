@@ -16,7 +16,7 @@ Verifies the feature engineering conducted in 'data_collector.py' by comparing t
 # 'test_data_extractor.py': 
 Collects the RB and mirror circuits from the IBM hardware. Please note, this script will not work without active platform and instance tokens. The script outputs the combined test data as csv files as either 'test_data_raw.csv' or 'test_data_raw_rt.csv' (for the retest data) in the 'Data/test_data' sub-folder.
 
-#'mitigation_script.py': 
+# 'mitigation_script.py': 
 This script loads in the saved model and the raw test data ('test_data_raw.csv/rt') and then uses it to predict the results. The noiseless ideal vectors were also simulated from the AerSimulator to ensure that extrapolations were accurate. As the model's learned parameters correspond to the feature set and ordering used during training, the script also rebuilds that same feature structure from the training data to ensure predictions are applied to the correct inputs. The script returns the mitigated results as 'test_data_mitigated{%}_{model}.csv' file to the 'Data/mitigated_results' sub-folder.
 
 # 'test_code.py': 
