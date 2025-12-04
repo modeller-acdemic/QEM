@@ -1,4 +1,4 @@
-# Breakdown of each Python script and where it stores its respective data
+Breakdown of each Python script and where it stores its respective data:
 
 # 'qiskit_circuit_generator.py': 
 Generates the random circuits with depths 2-9 and with a random length between 2-5, saving the circuits as circuits.csv to Data/training_data/circuits/. It also verifies the distribution with a graph, saved as length_distribution.png in 'Data/training_data/verification_figs/'.
